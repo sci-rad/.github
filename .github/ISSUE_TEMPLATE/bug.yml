@@ -1,0 +1,22 @@
+name: Bug
+description: Fallo encontrado en QA
+labels: ["bug", "qa"]
+body:
+  - type: textarea
+    id: pasos
+    attributes: { label: "Pasos para reproducir" }
+    validations: { required: true }
+  - type: textarea
+    id: esperado
+    attributes: { label: "Qué esperabas" }
+    validations: { required: true }
+  - type: textarea
+    id: real
+    attributes: { label: "Qué pasó" }
+    validations: { required: true }
+  - type: textarea
+    id: captura
+    attributes: { label: "Captura (sin datos de pacientes)" }
+  - type: input
+    id: entorno
+    attributes: { label: "Navegador / versión / estudio de prueba" }

@@ -1,0 +1,24 @@
+name: Tarea nocturna
+description: Tarea para la cola nocturna de Claude Code (un PR por noche)
+labels: ["nocturno"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes: { label: "Objetivo (una frase, verificable)" }
+    validations: { required: true }
+  - type: textarea
+    id: archivos
+    attributes: { label: "Archivos que se tocan / que NO se tocan" }
+    validations: { required: true }
+  - type: textarea
+    id: pasos
+    attributes: { label: "Pasos (máximo 5)" }
+  - type: textarea
+    id: comprobar
+    attributes: { label: "Cómo comprobar que está hecho" }
+    validations: { required: true }
+  - type: dropdown
+    id: modelo
+    attributes:
+      label: "Modelo"
+      options: ["Sonnet", "Opus (justificar abajo)"]
